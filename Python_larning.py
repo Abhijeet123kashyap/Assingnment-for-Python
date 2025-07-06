@@ -1,23 +1,12 @@
-# Basic Math Operations Program
+# Personalized Greeting Program
 
-# Step 1: Take two numbers as input from the user
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
+# Step 1: Take user's first and last name as input
+first_name = input("Enter your first name: ")
+last_name = input("Enter your last name: ")
 
-# Step 2: Perform basic mathematical operations
-addition = num1 + num2
-subtraction = num1 - num2
-multiplication = num1 * num2
+# Step 2: Concatenate first and last name
+full_name = first_name + " " + last_name
 
-# Handle division by zero
-if num2 != 0:
-    division = num1 / num2
-else:
-    division = "Undefined (division by zero)"
+# Step 3: Print personalized greeting
+print(f"Hello, {full_name}! Welcome to the python program.")
 
-# Step 3: Display the results
-print("\nResults:")
-print(f"Addition: {num1} + {num2} = {addition}")
-print(f"Subtraction: {num1} - {num2} = {subtraction}")
-print(f"Multiplication: {num1} * {num2} = {multiplication}")
-print(f"Division: {num1} / {num2} = {division}")
